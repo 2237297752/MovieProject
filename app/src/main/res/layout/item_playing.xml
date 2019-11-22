@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_margin="@dimen/dp_3"
+    android:background="#141931"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgsimp_playing"
+            fresco:roundedCornerRadius="@dimen/dp_10"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_130" />
+        <TextView
+            android:id="@+id/scrore_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgsimp_playing"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:id="@+id/name_playing"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="悲伤逆流成河"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/imgsimp_playing"
+            android:layout_marginTop="@dimen/dp_5"
+            android:singleLine="true"
+            />
+        <Button
+            android:id="@+id/pay_playing"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_20"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#fff"
+            android:text="购票"
+            android:background="@drawable/play_paybutton"
+            android:layout_below="@+id/name_playing"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

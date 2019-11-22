@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#141931"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bw.movie.view.fragment.FragmentCinema">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80">
+        <ImageView
+            android:id="@+id/cinemaimg_location"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_26"
+            android:layout_marginTop="@dimen/dp_41"
+            android:background="@drawable/icon_location" />
+        <TextView
+            android:id="@+id/tvcinema_location"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_18"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_46"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:text="北京"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/cinema_imgserach"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_229"
+            android:layout_marginTop="@dimen/dp_41"
+            android:background="@drawable/icon_search" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/cinematab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#1c2243"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#fff"
+        app:tabTextColor="#00f"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/cinemaview_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

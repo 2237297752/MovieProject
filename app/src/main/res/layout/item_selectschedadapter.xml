@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_150"
+    android:layout_height="@dimen/dp_67"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/film_shape">
+
+    <TextView
+        android:id="@+id/movehollname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="中影I Do巨幕全景声厅"
+        android:textColor="#deffffff"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movehollname"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/moveonetimestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:40"
+            android:textColor="#deffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="------"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/moveonetimeclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:26 "
+            android:textColor="#deffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

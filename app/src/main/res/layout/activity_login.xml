@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/login_backgroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_305">
+        <ImageView
+            android:id="@+id/login_image_fanhui"
+            android:layout_marginTop="@dimen/dp_47"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:background="@drawable/fanhui"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#141931"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/login_et_phone"
+            android:hint="请输入邮箱账号"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#999"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/login_namekuang"
+            android:textColorHint="#999"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/dp_13"
+            android:paddingBottom="@dimen/dp_11"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_44" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_44">
+            <EditText
+                android:id="@+id/login_et_pwd"
+                android:hint="请输入密码"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#999"
+                android:textColorHint="#999"
+                android:background="@drawable/login_pwdkuang"
+                android:paddingLeft="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:layout_width="@dimen/dp_216"
+                android:layout_height="@dimen/dp_44" />
+            <Button
+                android:id="@+id/login_btn_wjmm"
+                android:text="忘记密码"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#333"
+                android:background="@drawable/login_wjmmkuang"
+                android:paddingBottom="@dimen/dp_13"
+                android:paddingTop="@dimen/sp_14"
+                android:layout_width="@dimen/dp_96"
+                android:layout_height="@dimen/dp_44" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/login_text_register"
+            android:text="暂无账号 立即注册"
+            android:textColor="#999"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_252"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_width="@dimen/dp_84"
+            android:layout_height="@dimen/dp_14" />
+        <Button
+            android:id="@+id/login_btn_login"
+            android:text="登录"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:background="@drawable/login_loginkuang"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_44" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_20">
+            <View
+                android:background="#fff"
+                android:layout_width="@dimen/dp_93"
+                android:layout_height="@dimen/dp_3"/>
+            <TextView
+                android:textSize="@dimen/sp_14"
+                android:textColor="#fff"
+                android:text="或"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:layout_marginRight="@dimen/dp_7"
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/dp_20" />
+            <View
+                android:background="#fff"
+                android:layout_width="@dimen/dp_93"
+                android:layout_height="@dimen/dp_3"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/login_btn_weixin"
+            android:text="微信"
+            android:textSize="@dimen/sp_16"
+            android:textColor="#fff"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:background="@drawable/login_weixinkuang"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_44" />
+    </LinearLayout>
+</LinearLayout>

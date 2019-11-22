@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#141931"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.UpdateActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/updata_image_faihui"
+            android:background="@drawable/fanhui"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16" />
+        <TextView
+            android:layout_marginTop="@dimen/dp_37"
+            android:textColor="#d8d8d8"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/dp_104"
+            android:text="最新版本"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_22" />
+    </LinearLayout>
+    <ImageView
+        android:background="@mipmap/qidongliao"
+        android:layout_marginTop="@dimen/dp_51"
+        android:layout_marginLeft="@dimen/dp_130"
+        android:id="@+id/update_img_zhuimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:textSize="@dimen/sp_14"
+        android:textColor="#fff"
+        android:text="最新版本"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_152"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_20" />
+    <TextView
+        android:textSize="@dimen/sp_12"
+        android:textColor="#fff"
+        android:text="V 2.0"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_166"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_17" />
+    <Button
+        android:id="@+id/update_btn_updatenow"
+        android:text="立即更新"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/dp_140"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_14"
+        android:background="@drawable/update_btn"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30" />
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931"
+    tools:context=".view.activity.FilmDeatilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/back_filmdetail"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_20"
+                android:background="@drawable/fanhui"
+                android:layout_marginTop="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_alignTop="@id/img_filmdetail"
+                />
+            <ImageView
+                android:id="@+id/img_filmdetail"
+                android:layout_width="@dimen/dp_360"
+                android:layout_height="@dimen/dp_500" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_filmdetail"
+                android:layout_marginLeft="@dimen/dp_45"
+                android:layout_marginBottom="@dimen/dp_23"
+                android:text="评分"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/score_filmdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_filmdetail"
+                android:layout_marginLeft="@dimen/dp_84"
+                android:layout_marginBottom="@dimen/dp_23"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_filmdetail"
+                android:layout_marginLeft="@dimen/dp_231"
+                android:layout_marginBottom="@dimen/dp_23"
+                android:text="评论"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/wether_filmdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_filmdetail"
+                android:layout_marginLeft="@dimen/dp_265"
+                android:layout_marginBottom="@dimen/dp_23"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/name_filmdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_filmdetail"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_7"
+                android:textColor="#d8d8d8"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/type_filmdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_filmdetail"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/time_filmdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_filmdetail"
+                android:layout_toRightOf="@id/type_filmdetail"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="#FFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/data_filmdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_filmdetail"
+               android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/location_filmdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_filmdetail"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_toRightOf="@id/data_filmdetail"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/dt_xin"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_19"
+                android:background="@drawable/filmdetailselector"
+                android:layout_below="@id/img_filmdetail"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_2"
+                android:button="@null"
+                />
+
+            <TextView
+                android:id="@+id/dt_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dt_xin"
+                android:layout_marginLeft="@dimen/dp_302"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/filmdetailtab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_below="@id/img_filmdetail"
+                android:layout_marginTop="@dimen/dp_80"
+                app:tabSelectedTextColor="#00f"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextColor="#f00"
+                ></android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/filmdetailview_pager"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_below="@id/filmdetailtab_layout"></android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/filmdetail_write"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_101"
+        android:background="#e8be18"
+        android:text="写影评"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/filmdetail_xuan"
+        android:layout_width="@dimen/dp_210"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/filmdetail_write"
+        android:layout_marginTop="@dimen/dp_101"
+        android:background="#e8185e"
+        android:text="选座购票"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_14" />
+
+</RelativeLayout>

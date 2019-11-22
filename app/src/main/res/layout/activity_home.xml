@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#141931"
+    android:layout_height="match_parent"
+    tools:context="com.bw.movie.view.activity.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/home_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/home_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true"
+        android:background="#1c2243"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/home_tv_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_60"
+                android:text="电影"
+                android:background="@drawable/home_tv_kuang"
+                android:paddingTop="@dimen/dp_9"
+                android:paddingBottom="@dimen/dp_9"
+                android:textColor="#e8185e"
+                android:textSize="@dimen/sp_14" />
+
+            <RadioButton
+                android:id="@+id/home_rb_cinema"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/home_img_cinema"
+                android:button="@null"
+                android:checked="true" />
+            <TextView
+                android:id="@+id/home_tv_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_126"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_60"
+                android:text="影院"
+                android:visibility="invisible"
+                android:background="@drawable/home_tv_kuang"
+                android:paddingTop="@dimen/dp_9"
+                android:paddingBottom="@dimen/dp_9"
+                android:textColor="#e8185e"
+                android:textSize="@dimen/sp_14" />
+            <RadioButton
+                android:id="@+id/home_rb_movie"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_146"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/home_img_movie"
+                android:button="@null" />
+            <TextView
+                android:id="@+id/home_tv_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_228"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_60"
+                android:text="我的"
+                android:background="@drawable/home_tv_kuang"
+                android:paddingTop="@dimen/dp_9"
+                android:paddingBottom="@dimen/dp_9"
+                android:textColor="#e8185e"
+                android:visibility="invisible"
+                android:textSize="@dimen/sp_14" />
+
+            <RadioButton
+                android:id="@+id/home_rb_my"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_238"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/home_img_my"
+                android:button="@null" />
+
+        </RelativeLayout>
+    </RadioGroup>
+</RelativeLayout>

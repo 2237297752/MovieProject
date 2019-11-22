@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931"
+    tools:context=".view.activity.WriteFilmSpeakActivity">
+
+    <RelativeLayout
+        android:id="@+id/write_relation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_22"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_37"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_21">
+
+        <ImageView
+            android:id="@+id/writefilm_fanhui"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_20"
+            android:background="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_22"
+            android:layout_toRightOf="@id/speakdetail_fanhui"
+            android:gravity="center"
+            android:text="写评价"
+            android:textColor="#fff"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/write_relation"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_writefilm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_38"
+            android:background="#1c2243"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_24"
+            android:text="悲伤逆流成河"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="我的评分"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_12" />
+
+        <RatingBar
+            android:id="@+id/write_ratfenfilm"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_14"
+            android:numStars="5"
+            android:progressBackgroundTint="#fff"
+            android:progressTint="#e8185e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_12"
+            tools:text="写点评价吧" />
+
+        <EditText
+            android:id="@+id/write_yourfilmpinglun"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_129"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#1c2243"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:paddingBottom="@dimen/dp_100"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="请开始你的表演"
+            android:textSize="@dimen/dp_10"
+            />
+
+        <Button
+            android:id="@+id/btn_writetijaiofilm"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_60"
+            android:background="#e8185e"
+            android:text="提交"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</RelativeLayout>

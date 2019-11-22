@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#141931"
+    android:layout_height="match_parent"
+    tools:context="com.bw.movie.view.fragment.FragmentCinema">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_38"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_24">
+            <ImageView
+                android:id="@+id/cinema_img_location"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:src="@drawable/icon_location"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_24" />
+            <TextView
+                android:id="@+id/cinema_tv_location"
+                android:text="北京"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_18" />
+            <ImageView
+                android:id="@+id/cinema_img_serach"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_229"
+                android:src="@drawable/icon_search"
+                android:layout_width="@dimen/dp_18"
+                android:layout_height="@dimen/dp_18" />
+        </LinearLayout>
+        <com.stx.xhb.xbanner.XBanner
+            android:id="@+id/cinema_xbanner"
+            app:isShowNumberIndicator="true"
+            app:pointsPosition="RIGHT"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/sp_18"
+            android:layout_marginBottom="@dimen/dp_40"
+            app:isAutoPlay="true"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_150"></com.stx.xhb.xbanner.XBanner>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#1c2243"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="@dimen/dp_360"
+            android:layout_height="@dimen/dp_38">
+            <ImageView
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_9"
+                android:src="@drawable/heart"
+                android:layout_width="@dimen/dp_19"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_9"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="#fff"
+                android:text="正在热映"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:id="@+id/cinema_tv_more"
+                android:text="更多"
+                android:textSize="@dimen/dp_12"
+                android:textColor="#fff"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_202"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_17" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cinema_recycleView"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_186"></android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#1c2243"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_38">
+            <ImageView
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_9"
+                android:src="@drawable/e"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_9"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="#fff"
+                android:text="即将上映"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:id="@+id/cinema_tv_morewill"
+                android:text="更多"
+                android:textSize="@dimen/dp_12"
+                android:textColor="#fff"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_202"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_17" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cinema_recycleView_will"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="414dp"></android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#1c2243"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_38">
+            <ImageView
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_9"
+                android:src="@drawable/hot"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_9"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="#fff"
+                android:text="热门电影"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:id="@+id/cinema_tv_morehot"
+                android:text="更多"
+                android:textSize="@dimen/dp_12"
+                android:textColor="#fff"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_202"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_17" />
+        </LinearLayout>
+        <RelativeLayout
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_height="@dimen/dp_125">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgsimp_hottop"
+                fresco:roundedCornerRadius="@dimen/dp_10"
+                android:layout_width="@dimen/dp_312"
+                android:layout_height="@dimen/dp_120" />
+            <TextView
+                android:id="@+id/name_hottop"
+                android:layout_alignBottom="@+id/imgsimp_hottop"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/scror_hottop"
+                android:layout_toRightOf="@+id/name_hottop"
+                android:layout_alignBottom="@+id/imgsimp_hottop"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/pay_hottop"
+                android:layout_width="@dimen/dp_35"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:text="购票"
+                android:background="@drawable/play_paybutton"
+                android:layout_alignBottom="@+id/imgsimp_hottop"
+                android:layout_toRightOf="@+id/scror_hottop"
+                android:layout_marginLeft="@dimen/dp_130"
+                android:layout_height="@dimen/dp_20" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cinema_recycleView_hot"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_11"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_307"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>

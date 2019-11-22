@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:button="@null"
+        android:id="@+id/cb"
+        android:layout_width="20dp"
+        android:visibility="gone"
+        android:background="@drawable/myy_which"
+        android:layout_height="20dp" />
+    <CheckBox
+        android:button="@null"
+        android:id="@+id/cb1"
+        android:enabled="false"
+        android:layout_width="20dp"
+        android:visibility="gone"
+        android:background="@drawable/myy_yelo"
+        android:layout_height="20dp" />
+</LinearLayout>

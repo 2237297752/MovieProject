@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="#141931"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgsimp_hotbottom"
+            fresco:roundedCornerRadius="@dimen/dp_10"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="@dimen/dp_120" />
+        <TextView
+            android:id="@+id/scrore_hotbottom"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/imgsimp_hotbottom"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/name_hotbottom"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/imgsimp_hotbottom"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/pay_hotbottom"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            android:text="购票"
+            android:background="@drawable/play_paybutton"
+            android:layout_below="@+id/name_hotbottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_20" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/my_shezhi"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_98">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name_will"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#fff"
+                android:text="悲伤逆流成河"
+                android:layout_marginLeft="@dimen/dp_118"
+                android:layout_marginTop="@dimen/dp_14"
+                android:singleLine="true"
+                android:layout_width="@dimen/dp_139"
+                android:layout_height="@dimen/dp_20" />
+            <TextView
+                android:id="@+id/time_will"
+                android:layout_width="@dimen/dp_139"
+                android:layout_height="@dimen/dp_17"
+                android:textSize="12sp"
+                android:layout_marginLeft="@dimen/dp_118"
+                android:textColor="#fff"
+                android:text="04月25日上映"
+                android:layout_marginTop="@dimen/dp_11"
+                />
+            <TextView
+                android:id="@+id/person_will"
+                android:layout_width="@dimen/dp_139"
+                android:layout_height="@dimen/dp_17"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginLeft="@dimen/dp_118"
+                android:textColor="#fff"
+                android:text="1134人想看"
+                android:layout_marginTop="@dimen/dp_10"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/yuyue_will"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#fff"
+            android:text="预约"
+            android:background="@drawable/play_paybutton"
+            android:layout_marginTop="@dimen/dp_68"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_20" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imgsimp_will"
+        fresco:roundedCornerRadius="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="@dimen/dp_88"
+        android:layout_height="@dimen/dp_108" />
+</RelativeLayout>
